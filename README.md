@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Videos
+
+This is a Next.js project that fetches data from an API and displays a list of videos, it also fetch each individual video and displays it.
+
 
 ## Getting Started
 
