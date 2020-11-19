@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Main from '../components/main';
 import Head from 'next/head';
+import axios from 'axios';
 
 const RegisterVideo = props => {
   const [title, setTitle] = useState('');
@@ -22,8 +23,7 @@ const RegisterVideo = props => {
       });
       props.history.push('/');
     } catch (err) {
-      setError(err);
-      console.log(error)
+      setError(err);      
     }
   }
   let displayError;
