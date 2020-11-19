@@ -2,13 +2,14 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Main from '../components/main';
 import VideosList from '../components/VideosList';
+import Navigation from '../components/navigation';
 
 const Index = props => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Videos</title>        
-      </Head>     
+      </Head>    
       <Main>
         <h1>Videos</h1> 
         <VideosList videos={props.videos} />

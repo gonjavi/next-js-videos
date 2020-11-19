@@ -5,26 +5,22 @@ import Main from '../../components/main';
 const Video = ({ video }) => {
   const router = useRouter();
   const {id} = router.query;
-  console.log(id)
   return (
     <Main>
       <div className="row">
-        <div className="col-md-6.offset-md-3">   
-          <div className="card">
-            <div className="card-header text-center">
+        <div className="list-group-item list-group-item-action d-flex justify-content-between align-items-center">   
+          
+            <div className="text-center">
+              <h3>
+                {useRouter.id} {video.attributes.title}
+              </h3>
+              <p>{video.attributes.description}</p>
               
             </div>
-            <div className="card-body text-center">
-              <h3>
-                {useRouter.id} {video.title}
-              </h3>
-              <p>{video.description}</p>
-              <iframe width="420" height="315"
+            <iframe width="420" height="315"
                 src={video.attributes.url}>
               </iframe>
-            </div>
-
-          </div>
+         
         </div> 
       </div>
     </Main>
